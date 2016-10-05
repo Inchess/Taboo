@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app=""
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,25 +8,26 @@
     android:baselineAligned="false">
 
     <EditText
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:inputType="textPersonName"
-        android:text="Blue"
-        android:textAlignment=""
-        android:ems="10"
-        android:id="@+id/blueTeam"
-        android:singleLine="false"
-        android:selectAllOnFocus="false"
-        android:background="#ECECEC"
-        tools:elevation="0dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/blue_team"
+        android:id="@+id/blue_team"
+        android:background="#ECECEC" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Red"
-        android:ems="10"
-        android:id="@+id/redTeam"
-        android:layout_marginTop="50dp"
-        android:textAlignment="center" />
+        android:hint="@string/red_team"
+        android:id="@+id/red_team"
+        android:background="#ECECEC"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_plus_red"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_plus_blue" />
 </LinearLayout>

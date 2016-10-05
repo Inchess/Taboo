@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Taboo</string>
+    <string name="blue_team">Blue Team</string>
+    <string name="red_team">Red Team</string>
+    <string name="button_plus_red">+</string>
+    <string name="button_plus_blue">+</string>
 </resources>
