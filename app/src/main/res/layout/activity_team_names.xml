@@ -3,31 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:weightSum="1"
     android:baselineAligned="false">
 
-    <EditText
-        android:layout_width="wrap_content"
+    <EditText android:id="@+id/blue_team"
+        android:layout_weight="1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/blue_team"
-        android:id="@+id/blue_team"
-        android:background="#ECECEC" />
+        android:background="#ECECEC"
+        />
 
-    <EditText
+    <EditText android:id="@+id/red_team"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/red_team"
-        android:id="@+id/red_team"
-        android:background="#ECECEC"/>
+        android:background="#ECECEC"
+        />
 
-    <Button
+    <EditText android:id="@+id/text_to_practise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_plus_red"/>
+        />
 
-    <Button
+    <Button android:id="@+id/button_to_practise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_plus_blue" />
+        android:onClick="practise"
+        />
+
+    <Button android:id="@+id/more_players_blue_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_plus_red"
+        android:onClick="addMorePlayers_redTeam"
+        />
+
+    <Button android:id="@+id/more_players_red_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_plus_blue"
+        android:onClick="addMorePlayers_blueTeam"
+        />
+
+    <Button android:id="@+id/go_to_next_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_further"
+        android:onClick="goFurther"
+        />
 </LinearLayout>
