@@ -3,48 +3,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:weightSum="1"
     android:baselineAligned="false">
 
     <EditText android:id="@+id/blue_team"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:hint="@string/blue_team"
-        android:background="#ECECEC"
+        style="@style/text_team_names"
         />
 
-    <EditText android:id="@+id/red_team"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/red_team"
-        android:background="#ECECEC"
+    <EditText android:id="@+id/first_player_blue"
+        style="@style/edit_text_fields"
         />
 
-    <EditText android:id="@+id/text_to_practise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText android:id="@+id/second_player_blue"
+        style="@style/edit_text_fields"
         />
 
-    <Button android:id="@+id/button_to_practise"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="practise"
+    <EditText android:id="@+id/third_player_blue"
+        style="@style/edit_text_fields"
         />
 
     <Button android:id="@+id/more_players_blue_team"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_plus_red"
         android:onClick="addMorePlayers_redTeam"
+        style="@style/buttons"
+        />
+
+    <EditText android:id="@+id/red_team"
+        android:hint="@string/red_team"
+        style="@style/text_team_names"
+        />
+
+    <EditText android:id="@+id/first_player_red"
+        style="@style/edit_text_fields"
+        />
+
+    <EditText android:id="@+id/second_player_red"
+        style="@style/edit_text_fields"
+        />
+
+    <EditText android:id="@+id/third_player_red"
+        style="@style/edit_text_fields"
         />
 
     <Button android:id="@+id/more_players_red_team"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_plus_blue"
-        android:onClick="addMorePlayers_blueTeam"
+        android:onClick="addMorePlayers_redTeam"
+        style="@style/buttons"
         />
 
     <Button android:id="@+id/go_to_next_screen"

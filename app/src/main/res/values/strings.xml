@@ -2,7 +2,5 @@
     <string name="app_name">Taboo</string>
     <string name="blue_team">Niebiescy</string>
     <string name="red_team">Czerwoni</string>
-    <string name="button_plus_red">+</string>
-    <string name="button_plus_blue">+</string>
     <string name="go_further">Idź dalej</string>
 </resources>

@@ -32,12 +32,4 @@ public class TeamNamesActivity extends Activity {
 
     public void goFurther(View view) {
     }
-
-    public void practise(View view) {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.text_to_practise);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
-    }
 }
